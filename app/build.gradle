@@ -60,9 +60,9 @@ android {
             }
         }
         debug {
-            applicationIdSuffix '.debug'
-            versionNameSuffix '-DEBUG'
-            manifestPlaceholders = [appName: "MatLog DEBUG"]
+            //applicationIdSuffix '.debug'
+            //versionNameSuffix '-DEBUG'
+            //manifestPlaceholders = [appName: "MatLog DEBUG"]
         }
     }
 
@@ -73,8 +73,8 @@ android {
         }
         fdroid {
             dimension "store"
-            applicationId "com.pluscubed.matloglibre"
-            manifestPlaceholders = [appName: "@string/app_name_libre"]
+            //applicationId "com.pluscubed.matloglibre"
+            //manifestPlaceholders = [appName: "@string/app_name_libre"]
         }
     }
 
@@ -94,7 +94,7 @@ dependencies {
 
     playImplementation 'com.google.firebase:firebase-core:16.0.5'
     playImplementation('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
-        transitive = true;
+        transitive = true
     }
 
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
